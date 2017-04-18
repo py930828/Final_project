@@ -40,10 +40,12 @@ end voter;
 
 architecture Behavioral of voter is
 type my_array is array (0 to 9) of std_logic_vector(2 downto 0);
-constant counter : integer := 9;
+constant counter : integer := 0;
 signal temp : std_logic_vector;
-signal count:integer := counter;
+--signal count:integer := counter;
+signal c : integer := counter;
 signal max : integer;
+signal maxnum :std_logic_vector(2 downto 0);
 signal ticket:my_array;
 
 begin
@@ -59,25 +61,29 @@ begin
         elsif (rising_edge(clk))then
             if(rising_edge(enable))then
                 -- save bits to array
-               ticket(count) <= A; 
-                count <= count -1;
+                for i in 0 to 9 loop
+                    ticket(i) <= A;
+                end loop;                          
              end if;
         end if;
         
-        --if(count=0)then
-        
-        
- end process;
- 
- 
- 
- 
-            
-                    
+            for i in 0 to 8 loop
+                c <= 0;
+                temp <= ticket(i);
+                for j in 0 to 9 loop
+                    if ( temp = ticket(i))then
+                        c <= c + 1;
+                     end if;
+                 end loop;
                  
-        
-
-
-
+                 if(c > max )then
+                    maxnum <= temp;
+                    max <= c;
+                 end if;
+             end loop;        
+          output <= maxnum;
+               
+ end process;
+    
 
 end Behavioral;
