@@ -62,7 +62,11 @@ begin
             if(enable = '1')then
                 -- save bits to array
                    ticket(count) <= A;
-                   count <= count + 1;   
+                   count <= count + 1;
+                   
+                   if(count=9) then
+                   --try to jump out the process;
+                   end if;   
              end if;
         end if;
         
