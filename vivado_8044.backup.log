@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Apr 18 11:57:13 2017
+# Process ID: 8044
+# Current directory: H:/EECS_443/Final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8312 H:\EECS_443\Final_project\Final_project.xpr
+# Log file: H:/EECS_443/Final_project/vivado.log
+# Journal file: H:/EECS_443/Final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/EECS_443/Final_project/Final_project.xpr
+INFO: [Project 1-313] Project file moved from 'H:/EECS_443/Xilinx_Vivado_Projects/Final_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'H:/EECS_443/Final_project/Final_project.ip_user_files'; using path 'H:/EECS_443/Xilinx_Vivado_Projects/Final_project/Final_project.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 737.969 ; gain = 108.656
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse H:/EECS_443/voter_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1

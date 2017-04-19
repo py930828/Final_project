@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Apr 12 16:48:43 2017">
+<application name="pa" timeStamp="Wed Apr 19 13:07:09 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="fd492e97304a4e57ad48308f62320947" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -18,78 +18,144 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddSources" value="1" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
-<property name="NEXT, Next " value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, voter" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, VHDL, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, Open Messages View" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="5" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, voter - Behavioral (voter.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, voter_tb - Behavioral (voter_tb.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="10" type="GuiResourceData"/>
 <property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
-<property name="voter.vhd, 0, 267" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 100, 242" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 107, 429" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 115, 437" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 123, 430" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 139, 432" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 139, 434" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 15, 363" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 152, 465" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 160, 438" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 160, 475" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 165, 449" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 172, 367" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 173, 433" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 173, 454" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 181, 436" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 184, 454" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 185, 205" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 188, 466" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 189, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 189, 453" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 190, 443" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 193, 451" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 201, 435" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 204, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 209, 449" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 211, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 213, 435" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 214, 259" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 216, 448" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 216, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 223, 469" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 227, 419" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 227, 436" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 227, 444" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 234, 437" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 239, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 251, 429" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 253, 452" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 254, 435" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 269, 435" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 272, 438" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 281, 433" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 296, 447" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 301, 407" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 315, 449" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 319, 230" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 321, 450" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 331, 366" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 355, 227" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 382, 430" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 490, 446" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 495, 435" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 62, 381" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 81, 256" value="1" type="GuiResourceData"/>
-<property name="voter.vhd, 82, 476" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 180, -33, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 199, 46, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 230, 67, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 244, 55, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 254, 70, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 289, -25, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 75, -6, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 88, -3" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 94, -31, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 186, 40" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_CUT, Cut" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 1, 465" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 12, 45" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 140, 468" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 146, 705" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 151, 394" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 152, 432" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 173, 500" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 179, 397" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 180, 395, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 191, 581" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 192, 483" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 195, 481" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 196, 362" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 207, 281" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 209, 279" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 224, 386" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 227, 277" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 233, 432" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 235, 428" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 262, 360" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 263, 424" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 277, 433" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 285, 485" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 319, 535" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 7, 500" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 72, 591, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 773, 428" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 89, 641" value="1" type="GuiResourceData"/>
+<property name="voter.vhd, 990, 489" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 104, 639" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 106, 637" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 107, 626" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 108, 601" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 108, 637" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 534" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 569" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 581" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 607" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 621" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 109, 653" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 110, 582" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 110, 603" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 110, 660" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 110, 669" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 529" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 555" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 597" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 636" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 651" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 688" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 111, 689" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 572" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 580" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 610" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 621" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 641" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 112, 676" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 113, 549" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 113, 557" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 113, 567" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 113, 638" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 114, 576" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 115, 437" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 115, 605" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 115, 622" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 117, 597" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 120, 582" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 138, 570" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 143, 608" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 149, 499" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 150, 589" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 151, 516" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 151, 584" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 151, 598" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 152, 464" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 152, 514" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 152, 560" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 152, 581" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 157, 347" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 157, 639" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 159, 661" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 160, 541" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 160, 563" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 162, 691" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 163, 504" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 163, 534" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 165, 588" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 167, 643" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 168, 332" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 168, 575" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 168, 590" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 173, 537" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 174, 586" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 178, 524" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 183, 625" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 203, 632" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 219, 608" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 25, 347" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 261, 551" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 31, 399" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 54, 481" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 63, 595" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 66, 580" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 721, 374" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 78, 577" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 82, 601" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 90, 511" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 967, 470" value="1" type="GuiResourceData"/>
+<property name="voter_tb.vhd, 969, 338" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="GuiMode" value="2" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/EECS_443/Final_project/Final_project.srcs/sources_1/new/voter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity voter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/EECS_443/Final_project/Final_project.srcs/sim_1/imports/EECS_443/voter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity voter_tb

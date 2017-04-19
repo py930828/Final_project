@@ -2,15 +2,17 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Apr 19 13:07:24 2017
-# Process ID: 9052
+# Start of session at: Tue Apr 18 11:57:13 2017
+# Process ID: 8044
 # Current directory: H:/EECS_443/Final_project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9964 H:\EECS_443\Final_project\Final_project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8312 H:\EECS_443\Final_project\Final_project.xpr
 # Log file: H:/EECS_443/Final_project/vivado.log
 # Journal file: H:/EECS_443/Final_project\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project H:/EECS_443/Final_project/Final_project.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source voter_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse H:/EECS_443/voter_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
